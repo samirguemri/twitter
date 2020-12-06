@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- ==================== -->
+	<!-- Project Informations -->
+	<!-- ==================== -->
+
+	<!-- Parent Module -->
+	<parent>
+		<groupId>edu.samir</groupId>
+		<artifactId>twitter</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+
+	<!-- Maven Informations -->
+	<artifactId>twitter-api</artifactId>
+	<packaging>jar</packaging>
+
+	<!-- General Informations -->
+	<name>twitter-api</name>
+	<url>http://maven.apache.org</url>
+
+	<!-- ======== -->
+	<!-- Dependencies -->
+	<!-- ======== -->
+	<dependencies>
+		<!-- ===== Modules ===== -->
+		<dependency>
+			<groupId>edu.samir</groupId>
+			<artifactId>twitter-model</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>edu.samir</groupId>
+			<artifactId>twitter-business</artifactId>
+		</dependency>
+		<!-- ===== Third-party Libraries ===== -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+		<!-- Mockito -->
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-all</artifactId>
+		</dependency>
+	</dependencies>
+
+	<!-- ===== -->
+	<!-- Build -->
+	<!-- ===== -->
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifest>
+							<mainClass>edu.samir.twitter.api.App</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
