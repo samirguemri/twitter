@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="twitter-data" />
+        <module name="twitter-model" />
+        <module name="twitter-business" />
+        <module name="twitter-api" />
+        <module name="twitter-webapp" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="twitter" target="1.8" />
+      <module name="twitter-api" target="1.8" />
+      <module name="twitter-business" target="1.8" />
+      <module name="twitter-data" target="10" />
+      <module name="twitter-model" target="1.8" />
+      <module name="twitter-webapp" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
